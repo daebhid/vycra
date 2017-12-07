@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vycra</title>
+        <style>
+            html {
+                @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+            }
+            body {
+                background-color: #fdfdf6;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 7px;
+                font-size: 10px;
+            }
+            
+            /* navigation */
+            li {
+                display: inline;
+            }
+            ul {
+                padding: 1em;
+                margin: 0;
+            }
+            li a {
+                color: darkslategray;
+                padding: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            li a:hover {
+                text-decoration: none;
+                color: red;
+            }
+            
+            .title {
+                text-align: center;
+                padding: 2em;
+            }
+            #slider {
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -ms-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+                opacity: 1;
+            }
+            #slider:hover {
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -ms-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+                opacity: 0;
+            }
+            #base {
+                background-image: url("img/vycraTEST3.jpg");
+                width: 400px;
+                height: 600px;
+            }
+        </style>
+        <script>
+        
+        </script>
+    </head>
+    <body>
+        <center>
+            <a href="main.html"><img class="title" src="img/Vycra.png" alt="Vycra" width="100"/></a>
+        </center>
+        <center>
+            <ul>
+                <li><a href="contact.html">Presets</a></li>
+                <li><a href="about.html">Info</a></li>
+            </ul>
+        </center>
+        <br>
+        <p>
+            <center>
+            <div id="base">
+            <img id="slider" src="img/vycraTEST.jpg"/>
+            </div>
+            <br><br> HOVER OVER
+            </center>
+        </p>
+    </body>
+</html>
