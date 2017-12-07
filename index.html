@@ -3,51 +3,48 @@
     <head>
         <title>Vycra</title>
         <style>
+            html {
+                @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+            }
             body {
                 background-color: #fdfdf6;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 7px;
+                font-size: 10px;
+                animation: fadein 5s;
+                -moz-animation: fadein 5s; /* Firefox */
+                -webkit-animation: fadein 5s; /* Safari and Chrome */
+                -o-animation: fadein 5s; /* Opera */
             }
             
-            /* centering */
-            * {
-                padding: 0;
+            /* navigation */
+            li {
+                display: inline;
+            }
+            ul {
+                padding: 1em;
                 margin: 0;
             }
-            #over {
-                position:absolute;
-                width:100%;
-                height:100%;
-                text-align: center; /*handles the horizontal centering*/
+            li a {
+                color: darkslategray;
+                padding: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
             }
-            /*handles the vertical centering of image*/
-            .Centerer
-            {
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
+            
+            li a:hover {
+                text-decoration: none;
+                color: red;
             }
-            .Centered
-            {
-                display: inline-block;
-                vertical-align: middle;
-            }
-            /* divs */
-            #fadelogo {
-                position:absolute;
-                width:100%;
-                height:100%;
-                text-align: center; /*handles the horizontal centering*/
-                animation: fadein 10s;
-                -moz-animation: fadein 10s; /* Firefox */
-                -webkit-animation: fadein 10s; /* Safari and Chrome */
-                -o-animation: fadein 10s; /* Opera */
-            }
-            /* fade in parameters */
+            
+             /* fade in parameters */
             @keyframes fadein {
                 from {
                     opacity:0;
                 }
                 to {
-                    opacity:.75;
+                    opacity:1;
                 }
             }
             @-moz-keyframes fadein { /* Firefox */
@@ -55,7 +52,7 @@
                     opacity:0;
                 }
                 to {
-                    opacity:.75;
+                    opacity:1;
                 }
             }
             @-webkit-keyframes fadein { /* Safari and Chrome */
@@ -63,7 +60,7 @@
                     opacity:0;
                 }
                 to {
-                    opacity:1=.75;
+                    opacity:1=1;
                 }
             }
             @-o-keyframes fadein { /* Opera */
@@ -71,19 +68,53 @@
                     opacity:0;
                 }
                 to {
-                    opacity: .75;
+                    opacity: 1;
                 }
             }
+            
+            /* grid */
+            .title {
+                text-align: center;
+                padding: 2em;
+            }
+            #vycra:hover {
+                opacity: .75;
+            }
+            
         </style>
     </head>
     <body>
-        <div id="fadelogo">
-            <span class="Centerer"></span>
-                <a href="main.html"><img class="Centered" src="Vycra.png" alt="Vycra" width="400"/></a>
-        </div>
-        
+        <br><br>
+        <center>
+            <img class="title" src="img/Vycra.png" alt="Vycra" width="100"/>
+        </center>
+        <center>
+            <ul>
+                <li><a href="contact.html">Shop</a></li>&nbsp;/&nbsp;
+                <li><a href="about.html">Info</a></li>
+            </ul>
+        </center>
+        <p>
+        <br>
+            <center>
+            <a href="gld1.html">
+            <img id="vycra" src="img/vycraGLD2.jpg" alt="Vycra" width="300"/></a>
+            
+            <a href="gld2.html">
+            <img id="vycra" src="img/vycraGLD3.jpg" alt="Vycra" width="300"/></a>
+            
+            <a href="gld2.html"> 
+            <img id="vycra" src="img/vycraGLD8.jpg" alt="Vycra" width="300"/></a>
+            
+            <a href="gld2.html">    
+            <img id="vycra" src="img/vycraGLD5.jpg" alt="Vycra" width="300"/></a>
+            </center>
+        </p>
+        <center>
+        <p>
+        <br><br>VYCRA GLD / VYCRA'S FLAGSHIP COLOUR PRESET
+        </p>
+        <br><ul><li><a href="buyGLD.html">PURCHASE</a></li></ul>
+        </center>
     </body>
-    
-<!-- <audio autoplay="true" src="Sound/fadein.wav"> -->
-    
 </html>
