@@ -5,7 +5,6 @@
         <style>
             html {
                 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
-
             }
             body {
                 background-color: #fdfdf6;
@@ -18,27 +17,7 @@
                 -o-animation: fadein 5s; /* Opera */
             }
             
-            /* navigation */
-            li {
-                display: inline;
-            }
-            ul {
-                padding: 1em;
-                margin: 0;
-            }
-            li a {
-                color: darkslategray;
-                padding: 2em;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            
-            li a:hover {
-                text-decoration: none;
-                color: red;
-            }
-            
-             /* fade in parameters */
+            /* fade in parameters */
             @keyframes fadein {
                 from {
                     opacity:0;
@@ -71,14 +50,90 @@
                     opacity: 1;
                 }
             }
+            /* navigation */
+            li {
+                display: inline;
+            }
+            ul {
+                padding: 1em;
+                margin: 0;
+            }
+            li a {
+                color: darkslategray;
+                padding: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
             
-            /* grid */
+            li a:hover {
+                text-decoration: none;
+                color: red;
+            }
+            
             .title {
                 text-align: center;
                 padding: 2em;
             }
-            #vycra:hover {
-                opacity: .75;
+            #slider {
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+                opacity: 1;
+            }
+            #slider:hover {
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+                opacity: 0;
+            }
+            #base1 {
+                display: inline-block;
+                background-image: url("img/vgld_b1.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            #base2 {
+                display: inline-block;
+                background-image: url("img/vgld_b2.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            #base3 {
+                display: inline-block;
+                background-image: url("img/vgld_b3.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            #base4 {
+                display: inline-block;
+                background-image: url("img/vgld_b4.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            #base5 {
+                display: inline-block;
+                background-image: url("img/vgld_b5.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            #base6 {
+                display: inline-block;
+                background-image: url("img/vgld_b6.jpg");
+                width: 300px;
+                height: 450px;
+            }
+            
+            center {
+                padding-top: .75em;
             }
             
         </style>
@@ -86,33 +141,41 @@
     <body>
         <br><br>
         <center>
-            <img class="title" src="Vycra.png" alt="Vycra" width="100"/>
+            <img class="title" src="img/Vycra.png" alt="Vycra" width="100"/>
         </center>
         <center>
             <ul>
-                <li><a href="contact.html">Shop</a></li>&nbsp;/&nbsp;
-                <li><a href="about.html">Info</a></li>
+                <li><a href="index.html">BUY</a></li>&nbsp;/
+                <li><a href="about.html">INFO</a></li>
             </ul>
         </center>
-        <p>
-        <br>
-            <center>
-            <a href="gld1.html">
-            <img id="vycra" src="vycraGLD2.jpg" alt="Vycra" width="300"/></a>
-            
-            <a href="gld2.html">
-            <img id="vycra" src="vycraGLD3.jpg" alt="Vycra" width="300"/></a>
-            
-            <a href="gld2.html"> 
-            <img id="vycra" src="vycraGLD8.jpg" alt="Vycra" width="300"/></a>
-            
-            <a href="gld2.html">    
-            <img id="vycra" src="vycraGLD5.jpg" alt="Vycra" width="300"/></a>
-            </center>
-        </p>
         <center>
-           <br>
-        <br><ul><li><a href="buyGLD.html">PURCHASE / VYCRA GLD</a></li></ul>
+        <br>
+            <div id="base1">
+            <img id="slider" src="img/vgld_a1.jpg"/>
+            </div>
+            
+            <div id="base2">
+            <img id="slider" src="img/vgld_a2.jpg" width="300" height="450"/>  
+            </div>
+            
+            <div id="base3">
+            <img id="slider" src="img/vgld_a3.jpg"/>
+            </div>
+        </center>
+        <center>
+            <div id="base4">
+            <img id="slider" src="img/vgld_a4.jpg"/>
+            </div>
+            
+            <div id="base5">
+            <img id="slider" src="img/vgld_a5.jpg" width="300" height="450"/>  
+            </div>
+            
+            <div id="base6">
+            <img id="slider" src="img/vgld_a6.jpg"/>
+            </div>
+            
         </center>
     </body>
 </html>
