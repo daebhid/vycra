@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vycra</title>
+        <style>
+            html {
+                @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+            }
+            body {
+                background-color: #fdfdf6;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 7px;
+                font-size: 10px;
+            }
+            /* centering */
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            #over {
+                position:absolute;
+                width:100%;
+                height:100%;
+                text-align: center; /*handles the horizontal centering*/
+            }
+            /*handles the vertical centering of image*/
+            .Centerer
+            {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            .Centered
+            {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            /* divs */
+            #fadelogo {
+                position:absolute;
+                width:100%;
+                height:100%;
+                text-align: center; /*handles the horizontal centering*/
+                animation: fadein 10s;
+                -moz-animation: fadein 10s; /* Firefox */
+                -webkit-animation: fadein 10s; /* Safari and Chrome */
+                -o-animation: fadein 10s; /* Opera */
+            }
+            /* fade in parameters */
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:.75;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:.75;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1=.75;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity: .75;
+                }
+            }
+            
+            /* nav */
+            li {
+                display: inline;
+            }
+            ul {
+                padding: 1em;
+                margin: 0;
+            }
+            li a {
+                color: darkslategray;
+                padding: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            li a:hover {
+                text-decoration: none;
+                color: red;
+            }
+            /*whole page link */
+                .entrance {
+                position: absolute:
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                text-indent: -9999px; /* we don't need to see the text, but some users and robots such as Google do */
+}
+        </style>
+    </head>
+    <body onclick="location.href='main.html';">
+        <div id="fadelogo">
+            <span class="Centerer"></span>
+                <img class="Centered" src="img/Vycra.png" alt="Vycra" width="400"/>
+        </div>
+        
+    </body>
+    
+<!-- <audio autoplay="true" src="Sound/fadein.wav"> -->
+    
+</html>

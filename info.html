@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vycra / Info</title>
+        <style>
+            html {
+                @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+            }
+            body {
+                background-color: #fdfdf6;
+                font-family: 'Cormorant Garamond', serif;
+                letter-spacing: 7px;
+                font-size: 10px;
+                animation: fadein 5s;
+                -moz-animation: fadein 5s; /* Firefox */
+                -webkit-animation: fadein 5s; /* Safari and Chrome */
+                -o-animation: fadein 5s; /* Opera */
+            }
+            
+            /* fade in parameters */
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-moz-keyframes fadein { /* Firefox */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            @-webkit-keyframes fadein { /* Safari and Chrome */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1=1;
+                }
+            }
+            @-o-keyframes fadein { /* Opera */
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            /* navigation */
+            li {
+                display: inline;
+            }
+            ul {
+                padding: 1em;
+                margin: 0;
+            }
+            li a {
+                color: darkslategray;
+                padding: 2em;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            li a:hover {
+                text-decoration: none;
+                color: red;
+            }
+            
+            .title {
+                text-align: center;
+                padding: 2em;
+            }
+            #slider {
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+                opacity: 1;
+            }
+            #slider:hover {
+                -webkit-transition: opacity .5s ease-in-out;
+                -moz-transition: opacity .5s ease-in-out;
+                -ms-transition: opacity .5s ease-in-out;
+                -o-transition: opacity .5s ease-in-out;
+                transition: opacity .5s ease-in-out;
+                opacity: 0;
+            }
+            #base {
+                background-image: url("img/vycraTEST3.jpg");
+                width: 400px;
+                height: 600px;
+            }
+        </style>
+        <script>
+        
+        </script>
+    </head>
+    <body>
+        <br><br>
+        <center>
+            <a href="index.html"><img class="title" src="img/Vycra.png" alt="Vycra" width="100"/></a>
+        </center>
+        <center>
+            <ul>
+                <li><a href="index.html">Shop</a></li>&nbsp;/
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </center>
+        <br>
+        <p>
+            <center>
+            <div id="base">
+            <img id="slider" src="img/vycraTEST.jpg"/>
+            </div>
+            <br><br> BEFORE / AFTER
+            </center>
+        </p>
+    </body>
+</html>

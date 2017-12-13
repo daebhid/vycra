@@ -17,7 +17,7 @@
                 -o-animation: fadein 5s; /* Opera */
             }
             
-            /* fade in parameters */
+            /* WHOLE PAGE FADE IN */
             @keyframes fadein {
                 from {
                     opacity:0;
@@ -50,7 +50,8 @@
                     opacity: 1;
                 }
             }
-            /* navigation */
+            
+            /* NAVIGATION */
             li {
                 display: inline;
             }
@@ -70,10 +71,13 @@
                 color: red;
             }
             
+            /* LOGO */
             .title {
                 text-align: center;
                 padding: 2em;
             }
+            
+            /* FADE IN FADE OUT HOVER SLIDER */
             #slider {
                 -webkit-transition: opacity .5s ease-in-out;
                 -moz-transition: opacity .5s ease-in-out;
@@ -90,60 +94,119 @@
                 transition: opacity .5s ease-in-out;
                 opacity: 0;
             }
-
+            
+            /* BEFORE IMAGES */
+            #base1 {
+                display: inline-block;
+                background: url("img/vgld_b2.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
+            }
+            
             #base2 {
                 display: inline-block;
-                background-image: url("vgld_b2.jpg");
-                width: 300px;
-                height: 450px;
+                background: url("img/vgld_b1.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
             }
             
             #base3 {
                 display: inline-block;
-                background-image: url("vgld_b3.jpg");
-                width: 300px;
-                height: 450px;
+                background: url("img/vgld_b3.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
+            }
+            
+            #base4 {
+                display: inline-block;
+                background: url("img/vgld_b4.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
             }
             
             #base5 {
                 display: inline-block;
-                background-image: url("vgld_b5.jpg");
-                width: 300px;
-                height: 450px;
+                background: url("img/vgld_b5.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
             }
             
+            #base6 {
+                display: inline-block;
+                background: url("img/vgld_b6.jpg") no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                width: 33vh;
+            }
+            
+            /* SOME STYLE ELEMENTS */
             center {
                 padding-top: .75em;
+            }
+            
+            div > img {
+                width: 33vh;
+                background-image: cover;
             }
             
         </style>
     </head>
     <body>
+        <!-- LOGO -->
         <br><br>
         <center>
-            <img class="title" src="Vycra.png" alt="Vycra" width="100"/>
+            <img class="title" src="img/Vycra.png" alt="Vycra" width="100"/>
         </center>
+        
+        <!-- NAVIGATION -->
         <center>
             <ul>
-                <li><a href="index.html">BUY</a></li>&nbsp;/
-                <li><a href="about.html">INFO</a></li>
+                <li><a href="shop.html">SHOP</a></li>&nbsp;/
+                <li><a href="info.html">INFO</a></li>
             </ul>
         </center>
+        
+        <!-- MAIN BODY -->
         <center>
-        <br>
-            <div id="base2">
-            <img id="slider" src="vgld_a2.jpg" width="300" height="450"/>  
+            <!-- FIRST 3 IMAGES -->
+            <br>
+            <div id="base1">
+            <img id="slider" src="img/vgld_a2.jpg"/>  
             </div>
             
-            <div id="base5">
-            <img id="slider" src="vgld_a5.jpg" width="300" height="450"/>  
+            <div id="base2">
+            <img id="slider" src="img/vgld_a1.jpg"/>  
             </div>
             
             <div id="base3">
-            <img id="slider" src="vgld_a3.jpg"/>
+            <img id="slider" src="img/vgld_a3.jpg"/>
             </div>
-        <br><br><br>
-            <li><a href="look.html">LOOK BOOK</a></li>
+            
+            <!-- BUY NOW LINK -->
+            <br><br><br>
+            <li><a href="look.html">BUY VYCRA GLD</a></li>
+            
+            <!-- NEXT 3 IMAGES -->
+            <br><br><br>
+            <div id="base4">
+            <img id="slider" src="img/vgld_a4.jpg"/>  
+            </div>
+            
+            <div id="base5">
+            <img id="slider" src="img/vgld_a5.jpg"/>  
+            </div>
+            
+            <div id="base6">
+            <img id="slider" src="img/vgld_a6.jpg"/>
+            </div>
         </center>
+        <!-- FOOTER -->
+        <br><br><br>
+        <br><br><br>
     </body>
 </html>
